@@ -2,12 +2,14 @@ import React, {useEffect, useState} from "react";
 import Tmdb from "./Tmdb";
 import MovieRow from "./components/MovieRow";
 import FeaturedMovie from "./components/FeaturedMovie";
+import Header from "./components/Header";
 import "./App.css"
 
 export default () => {
 
     const [movieList, setMovieList] = useState([]);
     const [featuredData, setFeaturedData] = useState(null)
+    const [blackHeader, setBlackHeader] = useState(false)
 
 
     useEffect(() => {
@@ -30,7 +32,11 @@ export default () => {
     }, []);
 
     return (
+
         <div className="page">
+
+            <Header black={blackHeader}/>
+
             {featuredData &&
                 <FeaturedMovie item={featuredData}/>
             }
