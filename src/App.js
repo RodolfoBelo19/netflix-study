@@ -72,6 +72,12 @@ export default () => {
                    <a href="https://www.linkedin.com/in/rodolfo-belo-5786b21a0/"> <strong> Rodolfo Belo </strong> </a><br />
                 </div>
             </footer>
+
+            {movieList.length <= 0 &&
+                <div className="loading">
+                    <img src="https://media.filmelier.com/noticias/br/2020/03/Netflix_LoadTime.gif" width="500"  alt="Carregando"></img>
+                </div>
+            }      
         </div>
     )
 
