@@ -31,6 +31,23 @@ export default () => {
 
     }, []);
 
+    useEffect(() => {
+        const scrollListener = () => {
+            if(window.scrollY > 10) {
+                setBlackHeader(true)
+            }
+            else {
+                setBlackHeader(false)
+            }
+        }
+
+        window.addEventListener('scroll', scrollListener);
+
+        return () => {
+            window.removeEventListener('scroll', scrollListener);
+        }
+    }, []);
+
     return (
 
         <div className="page">
@@ -47,6 +64,14 @@ export default () => {
                     <MovieRow key={key} title={item.title} items={item.items}/>
                 ))}
             </section>
+
+            <footer>
+                <div className="footer--content">
+                    API utilizada - <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiYkoTqxc3zAhWurJUCHUJ7BOsQFnoECBEQAQ&url=https%3A%2F%2Fdevelopers.themoviedb.org%2F3&usg=AOvVaw1EE8OsHDg8JkR4SrWGHSPw"> <strong>TMDB</strong></a><br />
+                    Direitos de imagens - <strong> Netflix </strong><br />
+                   <a href="https://www.linkedin.com/in/rodolfo-belo-5786b21a0/"> <strong> Rodolfo Belo </strong> </a><br />
+                </div>
+            </footer>
         </div>
     )
 
