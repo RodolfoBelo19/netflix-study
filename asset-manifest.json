@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/netflix-study/static/css/main.7ea3aa02.chunk.css",
+    "main.js": "/netflix-study/static/js/main.0a35242b.chunk.js",
+    "main.js.map": "/netflix-study/static/js/main.0a35242b.chunk.js.map",
+    "runtime-main.js": "/netflix-study/static/js/runtime-main.cac16dfe.js",
+    "runtime-main.js.map": "/netflix-study/static/js/runtime-main.cac16dfe.js.map",
+    "static/js/2.6649d8c7.chunk.js": "/netflix-study/static/js/2.6649d8c7.chunk.js",
+    "static/js/2.6649d8c7.chunk.js.map": "/netflix-study/static/js/2.6649d8c7.chunk.js.map",
+    "index.html": "/netflix-study/index.html",
+    "static/css/main.7ea3aa02.chunk.css.map": "/netflix-study/static/css/main.7ea3aa02.chunk.css.map",
+    "static/js/2.6649d8c7.chunk.js.LICENSE.txt": "/netflix-study/static/js/2.6649d8c7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cac16dfe.js",
+    "static/js/2.6649d8c7.chunk.js",
+    "static/css/main.7ea3aa02.chunk.css",
+    "static/js/main.0a35242b.chunk.js"
+  ]
+}
